@@ -1,0 +1,75 @@
+\documentclass[a4paper, onecolumn]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage[spanish, ruled, vlined, resetcount, algosection]{algorithm2e}
+\usepackage[]{babel}
+\usepackage{fontawesome5}
+\usepackage[letterpaper,top=2.5cm,bottom=2.5cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{lscape}
+\usepackage{listings}
+\usepackage{multicol}
+\usepackage{tabularx}
+
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+
+\newtheorem{theorem}{Teorema}[section]
+\newtheorem{definition}[theorem]{Definición}
+\newtheorem{problem}[theorem]{Problema}
+
+\newcommand{\Det}{\operatorname{Det}}
+\newcommand{\sgn}{\operatorname{sgn}}
+
+\SetKwInput{Coste}{Coste asintótico}
+\SetKwInput{Memoria}{Memoria}
+\SetKw{Yield}{yield}
+\SetKw{KwBy}{by}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{codeblue}{rgb}{0, 0, 0.6}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+	backgroundcolor=\color{backcolour},   
+	commentstyle=\color{codegreen},
+	keywordstyle=\color{blue},
+	numberstyle=\tiny\color{codegray},
+	stringstyle=\color{codepurple},
+	basicstyle=\footnotesize,
+	breakatwhitespace=false,         
+	breaklines=true,                 
+	captionpos=b,                    
+	keepspaces=true,                 
+	numbers=left,                    
+	numbersep=5pt,                  
+	showspaces=false,                
+	showstringspaces=false,
+	showtabs=false,                  
+	tabsize=2
+}
+
+\lstset{style=mystyle}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{AdaByron 2024}
+\rhead{AbrazaMatías}
+\cfoot{\thepage}
+
+\title{AdaByron}
+\author{AbrazaMatías}
+\date{\today}
+
+
+\begin{document}
+
+\maketitle
+
+\include{data_structures/data_structures}
+
+\end{document}
